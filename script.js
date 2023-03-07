@@ -4,7 +4,7 @@ var allStudents = [];
 let myLocalStorages  = JSON.parse(localStorage.getItem("studentDetails"));
 
 const quizData = [
-    {
+  /*  {
         question: 'The material used for constructing the core of an electromagnet is',
         a: 'A. iron',
         b: 'B. carbon',
@@ -181,8 +181,189 @@ const quizData = [
         d: 'D. electronegativity',
         correct: 'B',
         explanation: 'They both have diagonal relationship'
-    }
-    
+    }*/
+     {
+        question: "Vibration in stretched spring cannot be polarized because they are",
+          a: 'A. stationary wave',
+          b: 'B. transverse wave',
+          c: 'C. longitudinal wave',
+          d: 'D. mechanical wave',
+        correct: 'C',
+        explanation: 'Polarization is a property of transverse waves only. Wave in a spring is longitudinal.'
+        }
+         , {
+           question: "If a light wave has a wavelength of 500nm in air, what is the frequency of the wave?",
+           a: 'A. 3.0 × 10¹⁴ Hz',
+           b: 'B. 6.0 × 10¹⁴ Hz',
+           c: 'C. 6.0 × 10¹² Hz',
+           d: 'D. 2.5 × 10¹⁴ Hz',
+           correct: 'B',
+           explanation: 'velocity of light,c = 3 × 10^8ms-1; wavelength = 500nm = 500 x 10^-9m<br> v=fπ<br> where π = wavelength, f = frequency<br> f = 3×10^8/500×10^-9 = 6.0 × 10¹⁴Hz' 
+         }   
+       , {
+         question: "Which of the following is both mechanical and transverse?",
+         a: 'A. radio wave',
+         b: 'B. sound wave',
+         c: 'C. water wave',
+         d: 'D. X-ray',
+         correct: 'C',
+         explanation: 'Water wave is  both mechanical and transverse'
+       }   
+       , {
+         question: "The image formed by a pinhole camera is always",
+         a: 'A. inverted',
+         b: 'B. blurred',
+         c: 'C. magnified',
+         d: 'D. erect',
+         correct: 'A',
+         explanation: 'Image formed by a pinhole camera is always inverted!'
+       }  
+         , {
+           question: "If an object is plaved between two parallel plane mirrors woth theor reflecting surfaces facing each other, how many images of the object will be formed?",
+           a: 'A. 8',
+           b: 'B. 4',
+           c: 'C. infinite',
+           d: 'D. 2',
+           correct: 'C',
+           explanation: 'N = infinity for two parallel mirrors facing each other like in a barbing salon 🌝'
+         }  
+       , {
+         question: "An object is placed in front of two plane mirrors inclined at an angle ➰°. If the total number of images formed is 7, find the value of ➰",
+         a: 'A. 30°',
+         b: 'B. 45°',
+         c: 'C. 51°',
+         d: 'D. 90°',
+         correct: 'B',
+         explanation: 'Using N = 360/➰ - 1 <br> 7 = 360/➰ - 1 <br> 8➰ = 360, ➰ = 45°'
+         
+       }   
+        , {
+          question: "An object of height 5cm is placed in front of a concave mirror of focal length 10cm. The image height is",
+          a: 'A. 20cm',
+          b: 'B. 15cm',
+          c: 'C. 10cm',
+          d: 'D. 5cm',
+          correct: 'D',
+          explanation: '1/f = 1/u + 1/v<br>1/10 = 1/20 + 1/v<br>v = 20cm<br>v/u = IH/OH<br>20/20 = IH/5<br>IH = 5cm'
+        }   
+     , {
+       question: "Which has the shortest wavelength",
+       a: 'A. X-ray',
+       b: 'B. radio wave',
+       c: 'C. gamma ray',
+       d: 'D. infrared',
+       correct: 'C',
+       explanation: 'Gamma rays have the shortest wavelength but the highest frequency.'
+     }   
+     , {
+       question: "For a concave lens, the focal length is",
+       a: 'A. positive',
+       b: 'B. negative',
+       c: 'C. 0',
+       d: 'D. ➰',
+       correct: 'B',
+       explanation: 'The focal length of a concave (diverging) lens is always negative. That of convex is positive.'
+     }     
+     , {
+       question: "When a wave travels from a dense medium to a less dense medium, ",
+       a: 'A. it bends towards normal',
+       b: 'B. it bends away from normal',
+       c: 'C. it remains unchanged',
+       d: 'D. none of the above',
+       correct: 'B',
+       explanation: 'Go and read your note🌝'
+     }     
+     , {
+       question: "At what position will an object be placed in front of a concave mirror in order to obtain an image at infinity?",
+       a: 'A. at the pole of the mirror',
+       b: 'B. at the centre of curvature',
+       c: 'C. at the principal focus',
+       d: 'D. beyond the principal focus',
+       correct: 'C',
+       explanation: 'When the object is placed at the principal focus, the image is formed at infinity.'
+     }    
+      , {
+        question: "In which of the following material media will sound travel faster?",
+        a: 'A. water',
+        b: 'B. oil',
+        c: 'C. metal',
+        d: 'D. gas',
+        correct: 'C',
+        explanation: ''
+      }    
+         , {
+           question: "The electromagnetic wave which can be detected by its heating effect is",
+           a: 'A. infrared ray',
+           b: 'B. gamma ray',
+           c: 'C. X-ray',
+           d: 'D. ultra-violet ray',
+           correct: 'A',
+           explanation: 'Infrared rays are detected by their heating effects'
+         }   
+           , {
+             question: "The focal length of a convex lens is 10cm. Find the power of the lens.",
+             a: 'A. 20D',
+             b: 'B. 0.1D',
+             c: 'C. 0.2D',
+             d: 'D. 10D',
+             correct: 'D',
+             explanation: 'Power of a lens = 1/f = 1/0.1 = 10D <br>The unit of power of a lens is diopter(D) when f is in metre.'
+           }
+           , {
+             question: "The ability of the human eye to focus objects on the retina is known as ",
+             a: 'A. interference',
+             b: 'B. accommodation',
+             c: 'C. diffraction',
+             d: 'D. superposition',
+             correct: 'B',
+             explanation: '👁️👀'
+           }     
+            , {
+              question: "The angle of deviation of light of various colours passing through a triangular prism increases in the order",
+              a: 'A. blue>green>red',
+              b: 'B. red>green>blue',
+              c: 'C. green>violet>blue',
+              d: 'D. blue>red>green',
+              correct: 'B',
+              explanation: 'R>O>G>B>I>V'
+            }
+           , {
+             question: "The refractive index of a medium is √2. The critical angle is",
+             a: 'A. 30°',
+             b: 'B. 45°',
+             c: 'C. 60°',
+             d: 'D. 90°',
+             correct: 'B',
+             explanation: 'sin c = 1/n = 1/√2<br>c = sin-¹(1/√2) = 45°'
+           }
+             , {
+               question: "The image formed by a simple microscope is",
+               a: 'A. virtual, inverted, diminished',
+               b: 'B. real, erect, magnified',
+               c: 'C. virtual, erect, magnified',
+               d: 'D. real, inverted, diminished',
+               correct: 'C',
+               explanation: 'VEM'
+             }
+             , {
+               question: "A wave of period 0.02s has a frequency of",
+               a: 'A. 0.2 Hz',
+               b: 'B. 0.02 Hz',
+               c: 'C. 5 Hz',
+               d: 'D. 50 Hz',
+               correct: 'D',
+               explanation: 'f = 1/T = 1/0.02 = 50Hz'
+             }
+            , {
+              question: "The colours seen in a rainbow are due to",
+              a: 'A. polarization',
+              b: 'B. diffraction',
+              c: 'C. refraction',
+              d: 'D. absorption',
+              correct: 'C',
+              explanation: 'Rays of sunlight are refracted and totally internally reflected by water droplets and are dispersed in the process.'
+            }
+             
 ]
 
 // const allStudents = []
